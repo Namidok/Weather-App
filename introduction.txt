@@ -1,0 +1,30 @@
+This project is too get weather details of a city through out the world by using a API from "https://openweathermap.org/".
+
+Steps to get API KEY:
+1. In order to get the information through an API, you will need to have a KEY in order to access the API.
+2.Go on to the website "https://openweathermap.org/" and create a free account for yourself
+3.After creating an account, go to the API section present on top of the page and search for "Current Weather Data" and click on API Doc.
+4.We are using this built-in API request by city name "https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}" to access the Data.
+5.As you can see we have to get the API key in order to access this URI.
+6.Go to your profile and click on My API keys. Click on Generate and save that API key in your notepad
+
+STORING API KEY IN WINDOWS ENV VARIABLE
+1.API keys are sensitive information that grant access to external services or resources. Storing them directly in your code, especially if you're sharing your code or hosting it in a public repository, can expose your keys to potential security risks. By using environment variables, you keep your keys separate from your codebase and reduce the risk of accidental exposure.
+2.Go to settings, and search for "View advanced system settings", Click on Environment variables and click on NEW.
+3.Name your variable name as you wish and in the value keep your API key.
+4.You can use your Variable Name in the python code to access the key value as in Python Dictionaries.
+
+INSTALLING MODULES
+1.I recommend creating a Vitrual Environment to install the modules and run the program for better results.
+2.Follow the below steps to create a virtual environment.
+        # Create a virtual environment
+        python -m venv venv
+
+        # Activate the virtual environment
+        # On Windows:
+        venv\Scripts\activate
+        # On macOS and Linux:
+        source venv/bin/activate
+
+        # Install 'requests'
+        pip install requests
